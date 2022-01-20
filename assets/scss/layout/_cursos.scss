@@ -1,0 +1,79 @@
+.cursos{  
+    padding: 0 15px;  
+    @include grid(2);
+    @include tablet{
+        @include grid(1);
+    }
+    .cursos__articulo{
+        border: 2px solid $negro;
+        padding: 24px;
+
+        .cursos__articulo--card{
+            border:3px solid 	rgb(200,200,200);
+            padding: 8px;
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            h2{
+                margin-bottom: 10px;
+            }
+            h3{
+                margin-bottom: 10px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+            .cursos__articulo--card--redes{
+                display: flex;
+                i{
+                    
+                    &:not(:first-child) {
+                        margin-left: 10px;
+                    }
+                }
+                p{
+                    margin-left: 4px;
+                }
+            }
+
+        }
+        .cursos__articulo--ltda{
+            text-align: center;
+            .cursos__articulo--ltda--img{
+                height: 150px;
+                border-radius: 50%;
+                border: 1px solid $negro;
+            }
+            .cursos__articulo--ltda--redes{
+                margin: 10px 0;
+                i{
+                    &:not(:first-child) {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .cursos__articulo--mascursos{
+            background: $marron;
+            font-weight: bold;
+            text-align: center;
+            color: $blanco;
+            font-size: $medium;
+            padding: 5px 0;
+            margin: 10px 0; 
+        }
+       
+        
+      ul{
+          li{
+              margin-bottom: 5px;
+              i{
+                  font-size: 8px;
+                  margin-right: 5px;
+              }
+          }
+      }  
+    }
+}
